@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070707">
+<meta name="description" content="OTCooks — an independent meme community inspired by OTC culture.">
+<title>OTCooks — We Don't Chase. We Cook.</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:#060606;color:#f7f7f7;line-height:1.5;overflow-x:hidden}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;opacity:.035;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:18px 18px}
+.wrap{max-width:1120px;margin:auto;padding:0 24px}
+nav{height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #1c1c1c}
+.nav-logo{height:46px;width:auto;display:block}
+.nav{display:flex;gap:25px}.nav a{color:#777;text-decoration:none;font-size:12px;font-weight:800;letter-spacing:1px}.nav a:hover{color:#fff}
+
+.hero{min-height:calc(100vh - 72px);min-height:680px;display:flex;align-items:center;text-align:center;justify-content:center;position:relative;overflow:hidden;border-bottom:1px solid #1c1c1c}
+.hero:before{content:"";position:absolute;left:50%;top:50%;width:700px;height:700px;transform:translate(-50%,-43%);border-radius:50%;background:radial-gradient(circle,rgba(255,125,0,.22) 0,rgba(255,125,0,.08) 30%,transparent 68%);filter:blur(35px);animation:breath 5s ease-in-out infinite}
+@keyframes breath{50%{transform:translate(-50%,-43%) scale(1.09);opacity:.75}}
+.hero-inner{position:relative;z-index:1;width:100%;max-width:900px;padding:45px 0}
+.kicker{font-size:11px;letter-spacing:5px;color:#ff9a1e;font-weight:900;margin-bottom:10px;animation:rise .8s ease both}
+.hero-logo{width:min(520px,84vw);height:auto;margin:0 auto 4px;display:block;filter:drop-shadow(0 0 18px rgba(255,117,0,.18));animation:logoIn 1s ease both}
+@keyframes logoIn{from{opacity:0;transform:scale(.92) translateY(12px)}to{opacity:1;transform:scale(1) translateY(0)}}
+.hero-title{font-size:clamp(38px,6.5vw,72px);line-height:.9;letter-spacing:-4px;font-weight:950;margin-top:0;animation:rise 1s .1s ease both}
+.hero-title span{display:block}
+.sub{font-size:clamp(16px,2.3vw,21px);color:#969696;max-width:650px;margin:20px auto 27px;animation:rise 1s .2s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.buttons{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{padding:13px 23px;border-radius:999px;border:1px solid #303030;background:#111;color:#fff;text-decoration:none;font-size:12px;font-weight:900;letter-spacing:.5px;transition:.2s}
+.btn.primary{background:#fff;color:#070707;border-color:#fff}.btn:hover{transform:translateY(-3px)}
+
+section{padding:90px 0;border-bottom:1px solid #1c1c1c}
+.label{color:#ff9a1e;font-size:10px;letter-spacing:4px;font-weight:900;margin-bottom:13px}
+h2{font-size:clamp(38px,6.5vw,68px);line-height:.92;letter-spacing:-4px}
+.grid{display:grid;grid-template-columns:1.1fr .9fr;gap:65px;align-items:center}
+.copy p{color:#888;font-size:17px;max-width:650px;margin-top:20px}
+.statement{border:1px solid #282828;background:linear-gradient(145deg,#121212,#090909);border-radius:26px;padding:38px;box-shadow:0 20px 80px rgba(0,0,0,.35)}
+.statement .big{font-size:34px;font-weight:950;line-height:1;letter-spacing:-2px}.statement small{display:block;color:#666;margin-top:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+.card{min-height:180px;border:1px solid #282828;border-radius:20px;background:#0c0c0c;padding:25px;transition:.2s}.card:hover{transform:translateY(-5px);border-color:#4a4a4a}
+.icon{font-size:31px;margin-bottom:18px}.card h3{font-size:17px}.card p{color:#707070;font-size:13px;margin-top:7px}
+.join{text-align:center}.join p{color:#858585;max-width:620px;margin:18px auto 28px}
+.disclaimer{color:#505050!important;font-size:11px!important;margin-top:25px!important;max-width:720px!important}
+footer{padding:30px 0;color:#555;font-size:11px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){.nav{display:none}.hero{min-height:650px}.hero-logo{width:min(470px,92vw)}.hero-title{letter-spacing:-3px}.grid{grid-template-columns:1fr;gap:35px}.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:450px){.wrap{padding:0 18px}.cards{grid-template-columns:1fr}.statement{padding:29px}.hero-inner{padding-top:35px}.kicker{letter-spacing:3.5px;font-size:9px}.hero-logo{margin-bottom:2px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a href="#"><img class="nav-logo" src="cooks-logo.png" alt="Cooks"></a>
+  <div class="nav"><a href="#about">ABOUT</a><a href="#culture">CULTURE</a><a href="#join">COMMUNITY</a></div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="kicker">INDEPENDENT MEME COMMUNITY</div>
+    <img class="hero-logo" src="cooks-logo.png" alt="Cooks logo">
+    <h1 class="hero-title">WE DON'T CHASE.<span>WE COOK. 🔥</span></h1>
+    <p class="sub">An independent meme brand inspired by OTC culture. Built for jokes, creativity and community.</p>
+    <div class="buttons">
+      <a class="btn primary" href="https://x.com/" target="_blank" rel="noopener">𝕏 FOLLOW X</a>
+      <a class="btn" href="https://t.me/" target="_blank" rel="noopener">TELEGRAM</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+<div class="grid">
+  <div class="copy">
+    <div class="label">01 / ABOUT</div>
+    <h2>MEME FIRST.<br>CULTURE ALWAYS.</h2>
+    <p>OTCooks is an independent meme community inspired by OTC culture — a place for humor, creativity and internet culture.</p>
+    <p>OTCooks is not the official OTC project, developer team or token platform. It is a separate community brand.</p>
+  </div>
+  <div class="statement">
+    <div class="big">NO CHASE.<br>NO NOISE.<br>JUST COOKING. 🍳</div>
+    <small>Independent community • Meme culture • For entertainment</small>
+  </div>
+</div>
+</section>
+
+<section id="culture">
+<div class="label">02 / THE CULTURE</div>
+<h2>THE KITCHEN IS OPEN.</h2>
+<div class="cards">
+  <div class="card"><div class="icon">😂</div><h3>MEMES</h3><p>Internet humor, OTC jokes and community-made chaos.</p></div>
+  <div class="card"><div class="icon">🍳</div><h3>COOKING</h3><p>When everyone is watching, we keep creating.</p></div>
+  <div class="card"><div class="icon">🗿</div><h3>COMMUNITY</h3><p>A simple place for people who enjoy the culture.</p></div>
+</div>
+</section>
+
+<section id="join" class="join">
+<div class="label">03 / COMMUNITY</div>
+<h2>COME COOK WITH US.</h2>
+<p>Follow OTCooks on X and join the Telegram community for memes, updates and community content.</p>
+<div class="buttons">
+  <a class="btn primary" href="https://x.com/" target="_blank" rel="noopener">𝕏 X</a>
+  <a class="btn" href="https://t.me/" target="_blank" rel="noopener">TELEGRAM</a>
+</div>
+<p class="disclaimer">OTCooks is an independent meme/community brand and is not affiliated with or operated by the OTC project or its developers. Nothing on this website is financial advice.</p>
+</section>
+
+<footer><div class="foot"><span>OTCOOKS 🔥</span><span>WE DON'T CHASE. WE COOK.</span></div></footer>
+</div>
+</body>
+</html>
